@@ -1,0 +1,9 @@
+src/
+__tests__/
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+vite.config.ts
+*.test.ts
+*.spec.ts
+.turbo/

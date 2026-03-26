@@ -1,0 +1,43 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.turbo/
+
+# Environment & secrets
+.env
+.env.*
+*.local
+*.pem
+*.key
+
+# Data directory
+data/
+*.db
+*.db-journal
+*.log
+
+# Credentials
+credentials.yaml
+**/credentials.yaml
+*_token.json
+*_credentials.json
+
+# Build artifacts
+*.tgz
+coverage/
+
+# pnpm
+.pnpm-store/
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

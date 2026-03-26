@@ -1,0 +1,30 @@
+{
+  "name": "@while-true-ai/integrations",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@while-true-ai/core": "workspace:*",
+    "amazon-cognito-identity-js": "^6.3.16",
+    "googleapis": "^146.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "tsup": "^8.4.0",
+    "vitest": "^3.1.0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@while-true-ai/core",
+  "version": "0.1.0",
+  "description": "Core engine for while-true-ai autonomous agent",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20.0.0" },
+  "files": ["dist"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.0",
+    "croner": "^9.0.0",
+    "drizzle-orm": "^0.41.0",
+    "js-yaml": "^4.1.0",
+    "openai": "^4.90.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "pino": "^9.6.0",
+    "vectra": "^0.9.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/js-yaml": "^4.0.9",
+    "drizzle-kit": "^0.31.0",
+    "tsup": "^8.4.0",
+    "vitest": "^3.1.0"
+  }
+}
